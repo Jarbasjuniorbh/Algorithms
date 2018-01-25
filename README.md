@@ -1,2 +1,2 @@
 # Algorithms
-Exercises of Algorithms that I have practiced
+Exercises of Algorithms and Data Structures that I have practiced
