@@ -5,6 +5,9 @@ test('function permutations exists', () => {
 });
 
 test('get all permutations of a string', () => {
-  const word = "abcd";  
-  expect(permutations(word)).toEqual(["cab", "acb", "abc", "cba", "bca", "bac" ]);
+  const word = "abc";  
+  const expected = ["cab", "acb", "abc", "cba", "bca", "bac" ];
+  const result = permutations(word);
+  expect(result).toEqual(expect.arrayContaining(expected));
+  expect(result.length).toEqual(expected.length);  
 });
