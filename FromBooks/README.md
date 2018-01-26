@@ -1,2 +1,3 @@
 # Algorithms from Books
-Algorithms questions from books that I've read
+
+Algorithms questions from books that I read and tried to solve.
