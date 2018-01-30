@@ -1,13 +1,14 @@
-const permutations = require('./index');
+const isUniqueChars = require('./index');
 
-test('function permutations exists', () => {
-  expect(typeof permutations).toEqual('function');
+test('function isUniqueChars exists', () => {
+  expect(typeof isUniqueChars).toEqual('function');
 });
 
-test('get all permutations of a string', () => {
-  const word = "abc";  
-  const expected = ["cab", "acb", "abc", "cba", "bca", "bac" ];
-  const result = permutations(word);
-  expect(result).toEqual(expect.arrayContaining(expected));
-  expect(result.length).toEqual(expected.length);  
+
+test('must not have unique characters', () => {  
+  expect(isUniqueChars('abccde')).toEqual(false);
+});
+
+test('must have unique characters', () => {
+  expect(isUniqueChars('abcde')).toEqual(true);
 });
